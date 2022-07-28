@@ -49,7 +49,7 @@ class AboutMeMob extends StatelessWidget {
           ).py16(),
 
           Container(height:20),
-          CircleAvatar(child: Image.asset('assets/images/pic.png'),radius: 120),
+          CircleAvatar(child: Image.asset('assets/images/pic.jpg'),radius: 120),
               const SizedBox(
                 height: 20,
               ),

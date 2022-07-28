@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/animations/rotate_icon.dart';
 import 'package:portfolio/home/web_homepage.dart';
 
+import '../home/home_page.dart';
+
 class SplashScreen extends StatefulWidget {
 
   const SplashScreen({Key? key}) : super(key: key);
@@ -21,7 +23,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   _homeScreen() async{
     await Future.delayed(Duration(milliseconds: 2000),(){});
-    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>WebHomePage()));
+    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>HomePage()));
   }
 
   @override

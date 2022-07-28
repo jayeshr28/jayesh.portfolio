@@ -43,7 +43,7 @@ class AboutMeWeb extends StatelessWidget {
                       children: [
 
                         Container(
-                          child: Image.asset("images/pic.png",
+                          child: Image.asset("assets/images/pic.jpg",
                             // width: size.width*0.24,
                               height: size.width < 1300
                                   ? size.height * 0.65
