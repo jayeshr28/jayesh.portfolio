@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/about/about_web.dart';
 import 'package:portfolio/webLayout/contact_web.dart';
@@ -100,7 +101,7 @@ class _WebHomePageState extends State<WebHomePage> {
                           padding: const EdgeInsets.symmetric(horizontal: 6.0),
                           child: DefaultTabController(
                             animationDuration: Duration(milliseconds: 1000),
-                            length: 4,
+                            length: 5,
                             child: TabBar(
                               indicatorColor: Colors.transparent,
                               onTap: (index) async {
@@ -119,7 +120,12 @@ class _WebHomePageState extends State<WebHomePage> {
                                 ),
                                 Tab(
                                   child: WebBarTile(
-                                    text: 'PROJECT',
+                                    text: 'CERTIFICATES',
+                                  ),
+                                ),
+                                Tab(
+                                  child: WebBarTile(
+                                    text: 'PROJECTS',
                                   ),
                                 ),
                                 Tab(
@@ -309,8 +315,21 @@ class _WebHomePageState extends State<WebHomePage> {
                                    index: 3,
                                     child:ProjectsWeb()
                                     ),
+                                  SizedBox(height:200,),
+                                  ContactWeb(),
+                                  SizedBox(height:100,),
+                                  Row(
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Text("Made with ", style: GoogleFonts.poppins(fontSize: 20, color: Colors.white60),),
+                                      FaIcon(FontAwesomeIcons.heart, color: Colors.blue,),
+                                      Text("  in Flutter", style: GoogleFonts.poppins(fontSize: 20, color: Colors.white60),),
 
-                                  ContactWeb()
+                                    ],
+                                  ),
+                                  SizedBox(height:100,),
+
 
                                 ],
                               )

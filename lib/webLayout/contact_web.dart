@@ -30,7 +30,7 @@ class ContactWeb extends StatelessWidget {
               Expanded(child: Divider(thickness: 1,color: Colors.grey,).p16()),
             ],
           ),
-          SizedBox(height: 20,),
+          SizedBox(height: 70,),
           Wrap(
               alignment: WrapAlignment.center,
               runSpacing: AppDimensions.normalize(10),

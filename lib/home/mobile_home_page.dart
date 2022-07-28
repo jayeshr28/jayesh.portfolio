@@ -106,7 +106,7 @@ class _HomePageMobState extends State<HomePageMob> {
                                       const EdgeInsets.symmetric(horizontal: 6.0),
                                   child: DefaultTabController(
                                       animationDuration: Duration(milliseconds: 1500),
-                                      length: 4,
+                                      length: 5,
                                       child: TabBar(
                                           indicatorColor: Colors.transparent,
                                           labelColor: Colors.lightBlueAccent,
@@ -123,14 +123,14 @@ class _HomePageMobState extends State<HomePageMob> {
                                                 ),
 
                                             ),
+
+
                                             Tab(
                                               icon: FaIcon(
                                                     FontAwesomeIcons.userGraduate,
                                                     // color: Colors.lightBlueAccent,
                                                 size: 20.0,
                                               ),
-
-
                                             ),
                                             Tab(
                                               icon:  FaIcon(
@@ -138,6 +138,14 @@ class _HomePageMobState extends State<HomePageMob> {
                                                   // color: Colors.lightBlueAccent,
                                                 size: 20.0,
                                                 ),
+
+                                            ),
+                                            Tab(
+                                              icon:  FaIcon(
+                                                FontAwesomeIcons.play,
+                                                // color: Colors.lightBlueAccent,
+                                                size: 20.0,
+                                              ),
 
                                             ),
                                             Tab(
@@ -334,8 +342,20 @@ SizedBox(height: size.width<401?size.height*0.1:size.height*0.2),
                                       SizedBox(height: size.height*0.2),
                                       _wrapScrollTag(index:3, child: size.width<1000?ProjectsMob():ProjectsWeb()),
                                       SizedBox(height: size.height*0.2),
-                                      ContactMobileTab()
+                                      SizedBox(height:200,),
+                                      _wrapScrollTag(index: 4, child:  ContactMobileTab(),),
+                                      SizedBox(height:100,),
+                                      Row(
+                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: [
+                                          Text("Made with ", style: GoogleFonts.poppins(fontSize: 20, color: Colors.white60),),
+                                          FaIcon(FontAwesomeIcons.heart, color: Colors.blue,),
+                                          Text("  in Flutter", style: GoogleFonts.poppins(fontSize: 20, color: Colors.white60),),
 
+                                        ],
+                                      ),
+                                      SizedBox(height:50,),
 
                                     ],
                                   ).px16(),

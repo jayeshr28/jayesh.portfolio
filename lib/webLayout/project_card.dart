@@ -101,7 +101,7 @@ class _ProjectCardState extends State<ProjectCard> {
                   ),
                   Text(
                     widget.projectTitle,
-                    style: TextStyle(fontSize: 10, color: Colors.white),
+                    style: TextStyle(fontSize: 17, color: Colors.white, fontWeight: FontWeight.bold),
                     textAlign: TextAlign.center,
                   ),
                 ],
@@ -122,7 +122,7 @@ class _ProjectCardState extends State<ProjectCard> {
               (width > 1135 || width < 950)
                   ? Text(
                 widget.projectTitle,
-                style: TextStyle(fontSize: 10, color: Colors.white),
+                style: TextStyle(fontSize:17, color: Colors.white),
                 textAlign: TextAlign.center,
               )
                   : Container(),
@@ -132,7 +132,7 @@ class _ProjectCardState extends State<ProjectCard> {
               Text(
                 widget.projectDescription,
                 textAlign: TextAlign.center,
-                style: GoogleFonts.nunito(color: Colors.white),
+                style: GoogleFonts.nunito(color: Colors.white, fontSize: 12),
               ),
               SizedBox(
                 height: height * 0.01,

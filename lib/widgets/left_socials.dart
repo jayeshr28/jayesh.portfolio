@@ -40,7 +40,7 @@ class LeftSocials extends StatelessWidget {
             hoverColor: Color(0xFF8E24AA),
             onPressed: () {
               method.launchURL(
-                  "https://www.linkedin.com/in//");
+                  "https://www.linkedin.com/in/jayesh-rathore-b3b27022a/");
             },
             iconSize: 16.0,
           ),
