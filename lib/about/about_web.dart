@@ -23,11 +23,11 @@ class AboutMeWeb extends StatelessWidget {
                   children: [
                     Expanded(child: Container(height: 1,color: Colors.grey.withOpacity(0.4),).p16()),
 
-                    Text("02. ",style: GoogleFonts.nunito(color: Colors.blue, fontSize: 35)),
+                    Text("02. ",style: GoogleFonts.nunito(color: Colors.blue, fontSize: 28)),
                     Text(
                       "About Me",
-                      style: GoogleFonts.lato(
-                          fontSize: 40,
+                      style: GoogleFonts.kanit(
+                          fontSize: 35,
                           fontWeight: FontWeight.bold,
                           color: Colors.white),
                     ).pOnly(right: 60),
@@ -42,9 +42,7 @@ class AboutMeWeb extends StatelessWidget {
                       // mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
 
-                        Positioned(
-                        bottom: 1,
-                          left: 2,
+                        Container(
                           child: Image.asset("images/pic.png",
                             // width: size.width*0.24,
                               height: size.width < 1300

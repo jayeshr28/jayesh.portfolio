@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/about/about_mob.dart';
+import 'package:portfolio/webLayout/contact_web.dart';
 import 'package:portfolio/widgets/certifications.dart';
+import 'package:portfolio/widgets/contacts_mob.dart';
 import 'package:portfolio/widgets/get_in_touch.dart';
 import 'package:portfolio/widgets/resume_card.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
@@ -12,6 +14,8 @@ import 'package:velocity_x/velocity_x.dart';
 import '../animations/entrance_fader.dart';
 import '../animations/rotate_icon.dart';
 import '../models/method.dart';
+import '../webLayout/projects_mob.dart';
+import '../webLayout/projects_web.dart';
 import '../widgets/left_socials.dart';
 
 class HomePageMob extends StatefulWidget {
@@ -328,6 +332,10 @@ SizedBox(height: size.width<401?size.height*0.1:size.height*0.2),
                                       SizedBox(height: size.height*0.2),
                                       _wrapScrollTag(index:2, child: CertificationWeb()),
                                       SizedBox(height: size.height*0.2),
+                                      _wrapScrollTag(index:3, child: size.width<1000?ProjectsMob():ProjectsWeb()),
+                                      SizedBox(height: size.height*0.2),
+                                      ContactMobileTab()
+
 
                                     ],
                                   ).px16(),

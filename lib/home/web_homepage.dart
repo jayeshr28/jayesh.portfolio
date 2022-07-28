@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/about/about_web.dart';
+import 'package:portfolio/webLayout/contact_web.dart';
+import 'package:portfolio/webLayout/projects_web.dart';
 import 'package:portfolio/widgets/certifications.dart';
 import 'package:portfolio/widgets/left_socials.dart';
 import 'package:portfolio/widgets/resume_card.dart';
@@ -300,6 +302,15 @@ class _WebHomePageState extends State<WebHomePage> {
                                     child:CertificationWeb()
                                     ),
 
+                                  SizedBox(height: 200,),
+
+                                    //certifications
+                                 _wrapScrollTag(
+                                   index: 3,
+                                    child:ProjectsWeb()
+                                    ),
+
+                                  ContactWeb()
 
                                 ],
                               )
